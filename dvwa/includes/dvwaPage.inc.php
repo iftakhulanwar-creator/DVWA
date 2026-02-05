@@ -284,6 +284,7 @@ function dvwaHtmlEcho( $pPage ) {
 	$menuBlocks[ 'home' ] = array();
 	if( dvwaIsLoggedIn() ) {
 		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Home', 'url' => '.' );
+		$menuBlocks[ 'home' ][] = array( 'id' => 'workflow', 'name' => 'Workflow Runner', 'url' => 'execute-file.php' );
 		$menuBlocks[ 'home' ][] = array( 'id' => 'instructions', 'name' => 'Instructions', 'url' => 'instructions.php' );
 		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup / Reset DB', 'url' => 'setup.php' );
 	}
